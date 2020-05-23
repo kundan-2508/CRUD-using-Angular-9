@@ -1,0 +1,10 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark justify-content-center" 
+[ngClass] = "{'fixed-bottom':position =='bottom'}">
+    <ul class="navbar-nav"> 
+      <li class="nav-item"
+      *ngFor="let tab of tabs"
+        [ngClass] = "{'active':tab.active}">
+        <a class="nav-link" href="#">{{tab.name}}</a>
+      </li>
+    </ul>
+</nav>
